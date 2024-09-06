@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<root>
+  <item>
+    <author_id>9</author_id>
+    <author_firstName>aaa</author_firstName>
+    <author_lastName>AAA</author_lastName>
+    <author_birthDay>2222-22-22</author_birthDay>
+  </item>
+  <item>
+    <author_id>10</author_id>
+    <author_firstName>bbb</author_firstName>
+    <author_lastName>BBB</author_lastName>
+    <author_birthDay>3333-33-33</author_birthDay>
+  </item>
+</root>

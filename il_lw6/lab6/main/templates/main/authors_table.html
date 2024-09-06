@@ -1,0 +1,46 @@
+<!-- В файле templates/main/Authorss_table.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таблица Авторов</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+<a href="/adding_page"
+   style="display: inline-block; padding: 10px 20px; background-color: #007BFF; color: #fff; text-decoration: none; border-radius: 5px;" class="ml-5 mt-5">Вернуться</a>
+    <div class="container mt-5">
+        <h2>Таблица Авторов</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th>Имя</th>
+                    <th>Фамилия</th>
+                    <th>Дата рождения</th>
+                    <th>Место рождения</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for Authors in authors %}
+                    <tr>
+                        <td>{{ Authors.id }}</td>
+                        <td>{{ Authors.name }}</td>
+                        <td>{{ Authors.lastName }}</td>
+                        <td>{{ Authors.birthDate }}</td>
+                        <td>{{ Authors.birthCity }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
